@@ -1,0 +1,3 @@
+model_type,model_path,examples,loss,perplexity
+baseline,openai-community/gpt2,256,3.570304438471794,35.527407415026275
+fine_tuned,models\gpt2-lyrics,256,3.104667380452156,22.301799726909444

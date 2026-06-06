@@ -1,0 +1,25 @@
+model_type,decoding,prompt,rater,fluency,coherence,creativity,emotional_tone,lyric_like_quality
+baseline,balanced_sampling,I miss the rain,AI composer-style evaluator,4,1,2,1,1
+baseline,balanced_sampling,A sad song about friendship,AI composer-style evaluator,3,2,2,2,1
+baseline,balanced_sampling,Dancing under city lights,AI composer-style evaluator,3,1,2,1,1
+baseline,balanced_sampling,I found hope in the dark,AI composer-style evaluator,3,1,2,1,1
+baseline,balanced_sampling,Goodbye but I still remember,AI composer-style evaluator,4,2,2,2,1
+baseline,balanced_sampling,A happy song about starting over,AI composer-style evaluator,3,2,2,1,1
+fine_tuned,temperature,I miss the rain,AI composer-style evaluator,2,1,3,2,3
+fine_tuned,temperature,A sad song about friendship,AI composer-style evaluator,2,1,3,2,2
+fine_tuned,temperature,Dancing under city lights,AI composer-style evaluator,1,1,2,1,2
+fine_tuned,temperature,I found hope in the dark,AI composer-style evaluator,2,2,3,3,3
+fine_tuned,temperature,Goodbye but I still remember,AI composer-style evaluator,2,2,3,3,3
+fine_tuned,temperature,A happy song about starting over,AI composer-style evaluator,2,2,3,2,3
+fine_tuned,top_k,I miss the rain,AI composer-style evaluator,4,4,3,4,4
+fine_tuned,top_k,A sad song about friendship,AI composer-style evaluator,4,4,3,4,4
+fine_tuned,top_k,Dancing under city lights,AI composer-style evaluator,4,3,4,3,4
+fine_tuned,top_k,I found hope in the dark,AI composer-style evaluator,3,3,3,3,4
+fine_tuned,top_k,Goodbye but I still remember,AI composer-style evaluator,4,4,3,4,4
+fine_tuned,top_k,A happy song about starting over,AI composer-style evaluator,4,3,3,3,3
+fine_tuned,top_p,I miss the rain,AI composer-style evaluator,2,2,3,2,3
+fine_tuned,top_p,A sad song about friendship,AI composer-style evaluator,3,3,3,3,3
+fine_tuned,top_p,Dancing under city lights,AI composer-style evaluator,3,3,3,2,3
+fine_tuned,top_p,I found hope in the dark,AI composer-style evaluator,2,2,3,2,3
+fine_tuned,top_p,Goodbye but I still remember,AI composer-style evaluator,3,3,3,4,4
+fine_tuned,top_p,A happy song about starting over,AI composer-style evaluator,3,3,3,3,3

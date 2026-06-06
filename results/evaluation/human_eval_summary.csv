@@ -1,0 +1,5 @@
+model_type,decoding,fluency,coherence,creativity,emotional_tone,lyric_like_quality
+baseline,balanced_sampling,3.333,1.5,2.0,1.333,1.0
+fine_tuned,temperature,1.833,1.5,2.833,2.167,2.667
+fine_tuned,top_k,3.833,3.5,3.167,3.5,3.833
+fine_tuned,top_p,2.667,2.667,3.0,2.667,3.167

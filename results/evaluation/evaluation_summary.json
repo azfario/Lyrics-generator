@@ -1,0 +1,8 @@
+{
+  "perplexity_results": "outputs\\eval\\perplexity_results.csv",
+  "human_eval_template": "outputs\\eval\\human_eval_template.csv",
+  "human_eval": {
+    "status": "summarized",
+    "summary_path": "outputs\\eval\\human_eval_summary.csv"
+  }
+}

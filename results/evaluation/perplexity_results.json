@@ -1,0 +1,16 @@
+[
+  {
+    "model_type": "baseline",
+    "model_path": "openai-community/gpt2",
+    "examples": 256,
+    "loss": 3.570304438471794,
+    "perplexity": 35.527407415026275
+  },
+  {
+    "model_type": "fine_tuned",
+    "model_path": "models\\gpt2-lyrics",
+    "examples": 256,
+    "loss": 3.104667380452156,
+    "perplexity": 22.301799726909444
+  }
+]

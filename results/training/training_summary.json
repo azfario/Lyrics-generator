@@ -1,0 +1,10 @@
+{
+  "global_step": 816,
+  "validation_loss": 3.0770565128326415,
+  "validation_perplexity": 21.694450984215436,
+  "model_name": "openai-community/gpt2",
+  "block_size": 256,
+  "batch_size": 4,
+  "gradient_accumulation_steps": 4,
+  "epochs": 3
+}

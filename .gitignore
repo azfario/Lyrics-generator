@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+.jupyter*/
+.ipython/
+notebooks/results_analysis_explained.ipynb
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+NLP Project Group.pdf
+
+# Hugging Face caches and trained weights
+.cache/
+models/
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# Raw and processed lyrics
+dataset lyrics/
+data/processed/*.csv
+data/processed/*.txt
+
+# Generated runs are curated into results/
+outputs/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
