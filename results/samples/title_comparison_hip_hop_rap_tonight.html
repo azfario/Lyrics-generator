@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hip-Hop/Rap Lyrics Comparison - tonight</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #090b12;
+      --panel: #121622;
+      --panel-soft: #171c2a;
+      --text: #f5f1e8;
+      --muted: #a7afc0;
+      --line: rgba(255, 255, 255, 0.1);
+      --baseline: #58a6ff;
+      --fine-tuned: #ff6ba8;
+      --chorus: rgba(255, 196, 87, 0.12);
+      --chorus-line: #ffc457;
+      --bridge: rgba(154, 123, 255, 0.12);
+      --bridge-line: #9a7bff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 15% 0%, rgba(88, 166, 255, 0.16), transparent 34rem),
+        radial-gradient(circle at 85% 5%, rgba(255, 107, 168, 0.14), transparent 32rem),
+        var(--background);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .page { width: min(1500px, calc(100% - 32px)); margin: 0 auto; padding: 48px 0 64px; }
+    .hero { text-align: center; margin-bottom: 32px; }
+    h1 { margin: 0; font-size: clamp(2rem, 5vw, 4.5rem); line-height: 1; }
+    .genre-pill {
+      display: inline-block;
+      margin: 16px 0 0;
+      padding: 7px 13px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--chorus-line);
+      background: var(--chorus);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: start; }
+    .model-card {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-top: 4px solid var(--accent);
+      border-radius: 20px;
+      background: rgba(18, 22, 34, 0.92);
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.24);
+    }
+    .model-card.baseline { --accent: var(--baseline); }
+    .model-card.fine-tuned { --accent: var(--fine-tuned); }
+    .card-header {
+      padding: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+    .card-header h2 { margin: 0; font-size: clamp(1.1rem, 2vw, 1.45rem); }
+    .lyrics { padding: 24px; }
+    .lyric-section {
+      margin: 0 0 22px;
+      padding: 18px;
+      border-left: 3px solid var(--accent);
+      border-radius: 0 12px 12px 0;
+      background: var(--panel-soft);
+    }
+    .lyric-section:last-child { margin-bottom: 0; }
+    .lyric-section.chorus { border-left-color: var(--chorus-line); background: var(--chorus); }
+    .lyric-section.bridge { border-left-color: var(--bridge-line); background: var(--bridge); }
+    .lyric-section h3 {
+      margin: 0 0 12px;
+      color: var(--accent);
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    .lyric-section.chorus h3 { color: var(--chorus-line); }
+    .lyric-section.bridge h3 { color: var(--bridge-line); }
+    .section-lines { display: grid; gap: 7px; }
+    .lyric-line { font-family: Georgia, "Times New Roman", serif; font-size: 1.02rem; line-height: 1.5; }
+    @media (max-width: 900px) {
+      .page { width: min(100% - 20px, 760px); padding-top: 28px; }
+      .comparison { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 520px) {
+      .lyrics, .card-header { padding: 18px; }
+      .lyric-section { padding: 15px; }
+      .lyric-line { font-size: 0.96rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <h1>tonight</h1>
+      <p class="genre-pill">Hip-Hop/Rap</p>
+    </header>
+    <section class="comparison" aria-label="Model lyrics comparison">
+      <article class="model-card baseline">
+  <header class="card-header">
+    <h2>Baseline GPT-2</h2>
+  </header>
+  <div class="lyrics"><section class="lyric-section verse"><h3>Verse 1</h3><div class="section-lines"><div class="lyric-line">. . . I&#x27;m so proud of you, man! [A chorus</div>
+<div class="lyric-line">of songs is heard.] (Solo) You&#x27;re gonna love it when</div>
+<div class="lyric-line">we get to the next verse and that&#x27;s how much</div>
+<div class="lyric-line">fun this song will be for us in a lot</div></div></section><section class="lyric-section chorus"><h3>Chorus</h3><div class="section-lines"><div class="lyric-line">of ways because there are two different verses out here</div>
+<div class="lyric-line">on &#x27;em...that was one of my favorite parts about doing</div>
+<div class="lyric-line">these lyrics all together but then again if somebody does</div>
+<div class="lyric-line">something like &quot;Oh yeah&quot; or whatever they say with their</div></div></section><section class="lyric-section verse"><h3>Verse 2</h3><div class="section-lines"><div class="lyric-line">voice just go ahead and sing them over and over</div>
+<div class="lyric-line">while everybody else sings through our heads..I don&#x27;t know what</div>
+<div class="lyric-line">your feelings would be right now except maybe some kind</div>
+<div class="lyric-line">words between me and someone who has been listening to</div></div></section><section class="lyric-section chorus"><h3>Chorus</h3><div class="section-lines"><div class="lyric-line">of ways because there are two different verses out here</div>
+<div class="lyric-line">on &#x27;em...that was one of my favorite parts about doing</div>
+<div class="lyric-line">these lyrics all together but then again if somebody does</div>
+<div class="lyric-line">something like &quot;Oh yeah&quot; or whatever they say with their</div></div></section><section class="lyric-section bridge"><h3>Bridge</h3><div class="section-lines"><div class="lyric-line">those tunes since day one....(pause)...and uhmmmm.....you wanna hear? Let me</div>
+<div class="lyric-line">see…let&#x27;s do this little thing where he tells me his</div></div></section><section class="lyric-section outro"><h3>Outro</h3><div class="section-lines"><div class="lyric-line">name at least once every few days until tomorrow night........yeah</div>
+<div class="lyric-line">yea sure i&#x27;ll try......but please remember not to forget him.......so</div></div></section></div>
+</article>
+      <article class="model-card fine-tuned">
+  <header class="card-header">
+    <h2>Fine-Tuned GPT-2</h2>
+  </header>
+  <div class="lyrics"><section class="lyric-section verse"><h3>Verse 1</h3><div class="section-lines"><div class="lyric-line">&#x27;cause i wanna be you and your baby that&#x27;s</div>
+<div class="lyric-line">why we got to do it together cause if</div>
+<div class="lyric-line">my love can&#x27;t see the way things are gonna</div>
+<div class="lyric-line">go then maybe this is what happens when a</div></div></section><section class="lyric-section chorus"><h3>Chorus</h3><div class="section-lines"><div class="lyric-line">girl like me starts losing her mind so</div>
+<div class="lyric-line">she decides on something else now tell yourself</div>
+<div class="lyric-line">just how much time does it take for</div>
+<div class="lyric-line">someone to get over who they really are</div></div></section><section class="lyric-section verse"><h3>Verse 2</h3><div class="section-lines"><div class="lyric-line">but at least one of us has enough</div>
+<div class="lyric-line">left in life pre oh yeah babe let&#x27;s</div>
+<div class="lyric-line">dance with each other don&#x27;t forget about all</div>
+<div class="lyric-line">these people out there getting rich off of</div></div></section><section class="lyric-section chorus"><h3>Chorus</h3><div class="section-lines"><div class="lyric-line">girl like me starts losing her mind so</div>
+<div class="lyric-line">she decides on something else now tell yourself</div>
+<div class="lyric-line">just how much time does it take for</div>
+<div class="lyric-line">someone to get over who they really are</div></div></section><section class="lyric-section bridge"><h3>Bridge</h3><div class="section-lines"><div class="lyric-line">fame too young not even trying anymore no</div>
+<div class="lyric-line">more talking or acting alone dont worry bout</div></div></section><section class="lyric-section outro"><h3>Outro</h3><div class="section-lines"><div class="lyric-line">everything still livin&#x27; inside our heads everyday every</div>
+<div class="lyric-line">single day post ohyeah babe let say goodbye</div></div></section></div>
+</article>
+    </section>
+  </main>
+</body>
+</html>

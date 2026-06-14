@@ -99,8 +99,32 @@ python src/evaluate.py
 After training, compare baseline and fine-tuned lyrics for a title:
 
 ```powershell
-python src/generate_from_title.py --title "Midnight Rain"
+python src/generate_from_title.py --title "Midnight Rain" --genre "Pop"
 ```
+
+If `--title` or `--genre` is omitted, the script requests it interactively.
+Supported genres are `Pop`, `Hip-Hop/Rap`, `R&B`, `Rock`, and `Ballad`. The
+comparison is saved as JSON, Markdown, and responsive HTML with deterministic
+formatting: four-line verses, a four-line chorus repeated exactly, a two-line
+bridge, and a two-line outro.
+Genre adherence is exploratory because the fine-tuning dataset did not contain
+genre labels.
+
+See the curated [Hip-Hop/Rap `tonight` comparison](results/samples/title_comparison_hip_hop_rap_tonight.html),
+with matching [JSON](results/samples/title_comparison_hip_hop_rap_tonight.json)
+and [Markdown](results/samples/title_comparison_hip_hop_rap_tonight.md) outputs.
+
+The default decoding settings favor lower self-perplexity while retaining
+sampling: temperature `0.6`, top-k `30`, top-p `0.85`, and repetition penalty
+`1.05`. Reproduce the temperature comparison with:
+
+```powershell
+python src/tune_decoding.py --title "Midnight Rain" --genre "Pop"
+```
+
+The sweep tests temperatures `0.6`, `0.7`, and `0.8` across three fixed random
+seeds and saves JSON, CSV, and HTML summaries with perplexity and repetition
+indicators.
 
 The first model load downloads `openai-community/gpt2` from Hugging Face.
 Full training used an RTX 3060 12 GB with a block size of 256, batch size 4,
@@ -113,6 +137,10 @@ Perplexity is `exp(loss)` and represents the model's uncertainty when
 predicting the next token. These metrics do not directly measure creativity or
 musical quality, so generated outputs were also scored for fluency, coherence,
 creativity, emotional tone, and lyric-like quality.
+
+The separate decoding sweep reports conditional perplexity for tuning purposes;
+the normal lyrics comparison keeps that metric out of its JSON, Markdown, HTML,
+and console output.
 
 The included qualitative scores are an **AI-assisted composer-style
 evaluation**, not a human-subject study. They are included as an exploratory

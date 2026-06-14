@@ -1,0 +1,131 @@
+{
+  "title": "tonight",
+  "genre": "Hip-Hop/Rap",
+  "prompt": "Genre: Hip-Hop/Rap\nSong title: tonight\n\n[Verse 1]\n",
+  "baseline_gpt2": {
+    "model": "openai-community/gpt2",
+    "raw_generation": ". . . I'm so proud of you, man! [A chorus of songs is heard.]\n\n (Solo) You're gonna love it when we get to the next verse and that's how much fun this song will be for us in a lot of ways because there are two different verses out here on 'em...that was one of my favorite parts about doing these lyrics all together but then again if somebody does something like \"Oh yeah\" or whatever they say with their voice just go ahead and sing them over and over while everybody else sings through our heads..I don't know what your feelings would be right now except maybe some kind words between me and someone who has been listening to those tunes since day one....(pause)...and uhmmmm.....you wanna hear? Let me see…let's do this little thing where he tells me his name at least once every few days until tomorrow night........yeah yea sure i'll try......but please remember not to forget him.......so",
+    "formatted_lyrics": "[Verse 1]\n. . . I'm so proud of you, man! [A chorus\nof songs is heard.] (Solo) You're gonna love it when\nwe get to the next verse and that's how much\nfun this song will be for us in a lot\n\n[Chorus]\nof ways because there are two different verses out here\non 'em...that was one of my favorite parts about doing\nthese lyrics all together but then again if somebody does\nsomething like \"Oh yeah\" or whatever they say with their\n\n[Verse 2]\nvoice just go ahead and sing them over and over\nwhile everybody else sings through our heads..I don't know what\nyour feelings would be right now except maybe some kind\nwords between me and someone who has been listening to\n\n[Chorus]\nof ways because there are two different verses out here\non 'em...that was one of my favorite parts about doing\nthese lyrics all together but then again if somebody does\nsomething like \"Oh yeah\" or whatever they say with their\n\n[Bridge]\nthose tunes since day one....(pause)...and uhmmmm.....you wanna hear? Let me\nsee…let's do this little thing where he tells me his\n\n[Outro]\nname at least once every few days until tomorrow night........yeah\nyea sure i'll try......but please remember not to forget him.......so",
+    "sections": [
+      {
+        "name": "Verse 1",
+        "type": "verse",
+        "lines": [
+          ". . . I'm so proud of you, man! [A chorus",
+          "of songs is heard.] (Solo) You're gonna love it when",
+          "we get to the next verse and that's how much",
+          "fun this song will be for us in a lot"
+        ]
+      },
+      {
+        "name": "Chorus",
+        "type": "chorus",
+        "lines": [
+          "of ways because there are two different verses out here",
+          "on 'em...that was one of my favorite parts about doing",
+          "these lyrics all together but then again if somebody does",
+          "something like \"Oh yeah\" or whatever they say with their"
+        ]
+      },
+      {
+        "name": "Verse 2",
+        "type": "verse",
+        "lines": [
+          "voice just go ahead and sing them over and over",
+          "while everybody else sings through our heads..I don't know what",
+          "your feelings would be right now except maybe some kind",
+          "words between me and someone who has been listening to"
+        ]
+      },
+      {
+        "name": "Chorus",
+        "type": "chorus",
+        "lines": [
+          "of ways because there are two different verses out here",
+          "on 'em...that was one of my favorite parts about doing",
+          "these lyrics all together but then again if somebody does",
+          "something like \"Oh yeah\" or whatever they say with their"
+        ]
+      },
+      {
+        "name": "Bridge",
+        "type": "bridge",
+        "lines": [
+          "those tunes since day one....(pause)...and uhmmmm.....you wanna hear? Let me",
+          "see…let's do this little thing where he tells me his"
+        ]
+      },
+      {
+        "name": "Outro",
+        "type": "outro",
+        "lines": [
+          "name at least once every few days until tomorrow night........yeah",
+          "yea sure i'll try......but please remember not to forget him.......so"
+        ]
+      }
+    ]
+  },
+  "fine_tuned_gpt2": {
+    "model": "models\\gpt2-lyrics",
+    "raw_generation": "'cause i wanna be you and your baby that's why we got to do it together cause if my love can't see the way things are gonna go then maybe this is what happens when a girl like me starts losing her mind so she decides on something else now tell yourself just how much time does it take for someone to get over who they really are but at least one of us has enough left in life pre oh yeah babe let's dance with each other don't forget about all these people out there getting rich off of fame too young not even trying anymore no more talking or acting alone dont worry bout everything still livin' inside our heads everyday every single day post ohyeah babe let say goodbye",
+    "formatted_lyrics": "[Verse 1]\n'cause i wanna be you and your baby that's\nwhy we got to do it together cause if\nmy love can't see the way things are gonna\ngo then maybe this is what happens when a\n\n[Chorus]\ngirl like me starts losing her mind so\nshe decides on something else now tell yourself\njust how much time does it take for\nsomeone to get over who they really are\n\n[Verse 2]\nbut at least one of us has enough\nleft in life pre oh yeah babe let's\ndance with each other don't forget about all\nthese people out there getting rich off of\n\n[Chorus]\ngirl like me starts losing her mind so\nshe decides on something else now tell yourself\njust how much time does it take for\nsomeone to get over who they really are\n\n[Bridge]\nfame too young not even trying anymore no\nmore talking or acting alone dont worry bout\n\n[Outro]\neverything still livin' inside our heads everyday every\nsingle day post ohyeah babe let say goodbye",
+    "sections": [
+      {
+        "name": "Verse 1",
+        "type": "verse",
+        "lines": [
+          "'cause i wanna be you and your baby that's",
+          "why we got to do it together cause if",
+          "my love can't see the way things are gonna",
+          "go then maybe this is what happens when a"
+        ]
+      },
+      {
+        "name": "Chorus",
+        "type": "chorus",
+        "lines": [
+          "girl like me starts losing her mind so",
+          "she decides on something else now tell yourself",
+          "just how much time does it take for",
+          "someone to get over who they really are"
+        ]
+      },
+      {
+        "name": "Verse 2",
+        "type": "verse",
+        "lines": [
+          "but at least one of us has enough",
+          "left in life pre oh yeah babe let's",
+          "dance with each other don't forget about all",
+          "these people out there getting rich off of"
+        ]
+      },
+      {
+        "name": "Chorus",
+        "type": "chorus",
+        "lines": [
+          "girl like me starts losing her mind so",
+          "she decides on something else now tell yourself",
+          "just how much time does it take for",
+          "someone to get over who they really are"
+        ]
+      },
+      {
+        "name": "Bridge",
+        "type": "bridge",
+        "lines": [
+          "fame too young not even trying anymore no",
+          "more talking or acting alone dont worry bout"
+        ]
+      },
+      {
+        "name": "Outro",
+        "type": "outro",
+        "lines": [
+          "everything still livin' inside our heads everyday every",
+          "single day post ohyeah babe let say goodbye"
+        ]
+      }
+    ]
+  }
+}
