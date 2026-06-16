@@ -152,11 +152,5 @@ The trained model and checkpoints are not included because they total several
 gigabytes. The executed notebook and curated result files allow the experiment
 to be reviewed without downloading or rerunning the model.
 
-## Author
-
-**[@azfario](https://github.com/azfario)** - data preprocessing, GPT-2
-fine-tuning, generation pipeline, evaluation, interactive demo, and results
-analysis.
-
 This repository is shared as an academic and portfolio project. See
 [ACADEMIC_USE_NOTICE.md](ACADEMIC_USE_NOTICE.md) for usage terms.
